@@ -6,3 +6,38 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+.chordpro-view-content,
+.chordpro-editor-content {
+	max-width: var(--file-line-width);
+	margin: 0 auto;
+	font-family: var(--font-monospace);
+}
+
+.chordpro-view-content {
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	padding: 0 var(--size-4-2);
+}
+
+.chordpro-editor-content {
+	display: block;
+	width: min(100%, var(--file-line-width));
+	height: 100%;
+	min-height: 12rem;
+	resize: none;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	border-radius: 0;
+	padding: 0 var(--size-4-2);
+	background: transparent;
+	color: var(--text-normal);
+	font-size: var(--font-text-size);
+	line-height: var(--line-height-normal);
+	appearance: none;
+	-webkit-appearance: none;
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
