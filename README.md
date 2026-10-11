@@ -34,23 +34,17 @@ npm run lint
 - `npm run build` runs TypeScript checks and builds the plugin for production.
 - `npm run lint` runs ESLint over the project.
 
-## Manual installation
+## Install from GitHub Releases
 
-Copy these files into your vault plugin folder:
+Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/badrick/obsidian-chordpro-vault/releases/latest).
+
+Copy the downloaded files into your vault's plugin folder:
 
 ```bash
 <Vault>/.obsidian/plugins/chordpro-vault/
 ├── main.js
 ├── manifest.json
-├── styles.css
-└── ...
+└── styles.css
 ```
 
-Then reload Obsidian and enable the plugin from the Community plugins settings.
-
-## Release process
-
-- Update the version in `manifest.json`.
-- Update the corresponding entry in `versions.json`.
-- Build the plugin before creating a release.
-- Publish the release assets: `manifest.json`, `main.js`, and `styles.css`.
+Reload Obsidian, then enable **ChordPro Vault** in **Settings → Community plugins**.
